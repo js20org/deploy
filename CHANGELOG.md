@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/js20org/deploy/compare/v1.0.0...v1.0.1) (2025-01-05)
+
+
+### Bug Fixes
+
+* rename to gcloud deploy ([c9d27a4](https://github.com/js20org/deploy/commit/c9d27a4d2a72bf92a4fef91db8775412a64c2c79))
+
 # 1.0.0 (2025-01-05)
 
 
