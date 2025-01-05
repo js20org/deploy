@@ -9,7 +9,7 @@ import { IFileInfo, IOverviewFileInfo } from '../types';
 
 export type IGetCacheControl = (filePath: string) => string;
 
-export interface IDeployFrontendProps {
+export interface IDeployGcloudFrontendProps {
     baseUrl: string;
     directoryPath: string;
     gcloudBucket: string;
@@ -254,13 +254,13 @@ const getSortedFiles = (files: IFileInfo[]) => {
     return clone;
 };
 
-export const deployFrontend = async ({
+export const deployGcloudFrontend = async ({
     baseUrl,
     directoryPath,
     gcloudBucket,
     getCacheControl,
-}: IDeployFrontendProps) => {
-    console.log('Starting deploy...');
+}: IDeployGcloudFrontendProps) => {
+    console.log('Starting Gcloud deploy...');
     console.log('');
 
     const overview = await getOverview(baseUrl);
