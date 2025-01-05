@@ -1,19 +1,17 @@
 {
     "name": "@js20/deploy",
-    "license": "MIT",
     "version": "0.0.0",
-    "private": true,
+    "license": "MIT",
     "sideEffects": false,
+    "main": "./dist/index.js",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
     "files": [
         "dist"
     ],
-    "main": "dist/index.js",
-    "types": "dist/index.d.ts",
     "scripts": {
-        "prebuild": "rm -r ./dist || true",
-        "build": "tsc --project tsconfig.build.json",
-        "show-coverage": "open ./tests/.coverage/lcov-report/index.html",
-        "test": "jest"
+        "prebuild": "rimraf ./dist",
+        "build": "tsc"
     },
     "dependencies": {
         "@js20/node-utils": "^1.4.4",
@@ -22,8 +20,14 @@
         "prompts": "^2.4.0"
     },
     "devDependencies": {
+        "@semantic-release/changelog": "^6.0.3",
+        "@semantic-release/git": "^10.0.1",
+        "@semantic-release/github": "^11.0.1",
+        "@semantic-release/npm": "^12.0.1",
         "@types/glob": "^8.1.0",
         "@types/node": "^22.10.5",
+        "rimraf": "5.0.1",
+        "semantic-release": "^24.2.0",
         "typescript": "^4.0.3"
     }
 }
