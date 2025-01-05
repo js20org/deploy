@@ -1,0 +1,29 @@
+{
+    "name": "@js20/deploy",
+    "license": "MIT",
+    "version": "0.0.0",
+    "private": true,
+    "sideEffects": false,
+    "files": [
+        "dist"
+    ],
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "prebuild": "rm -r ./dist || true",
+        "build": "tsc --project tsconfig.build.json",
+        "show-coverage": "open ./tests/.coverage/lcov-report/index.html",
+        "test": "jest"
+    },
+    "dependencies": {
+        "@js20/node-utils": "^1.4.4",
+        "axios": "^1.4.0",
+        "glob": "^7.1.6",
+        "prompts": "^2.4.0"
+    },
+    "devDependencies": {
+        "@types/glob": "^8.1.0",
+        "@types/node": "^22.10.5",
+        "typescript": "^4.0.3"
+    }
+}
