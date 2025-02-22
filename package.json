@@ -13,7 +13,7 @@
         "build": "tsc"
     },
     "dependencies": {
-        "@js20/node-utils": "^1.4.5",
+        "@js20/node-utils": "^1.4.6",
         "axios": "^1.4.0",
         "glob": "^7.1.6",
         "prompts": "^2.4.0"
