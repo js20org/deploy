@@ -1,3 +1,11 @@
+## [1.0.3](https://github.com/js20org/deploy/compare/v1.0.2...v1.0.3) (2025-02-22)
+
+
+### Bug Fixes
+
+* build ([44fc203](https://github.com/js20org/deploy/commit/44fc203cd4fd776e1e08e8b9ba679a971906fd20))
+* update node-utils to fix build ([7c2934c](https://github.com/js20org/deploy/commit/7c2934c30a4337ff128f4ce3b616a9fe4e8ac3bb))
+
 ## [1.0.2](https://github.com/js20org/deploy/compare/v1.0.1...v1.0.2) (2025-02-22)
 
 
