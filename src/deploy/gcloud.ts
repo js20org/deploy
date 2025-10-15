@@ -254,6 +254,20 @@ const getSortedFiles = (files: IFileInfo[]) => {
     return clone;
 };
 
+const askForContinue = async () => {
+    const shouldAsk = process.argv.indexOf('--yes') === -1;
+
+    if (!shouldAsk) {
+        console.log('Ran with "--yes" - skipping confirmation prompt.');
+        return true;
+    }
+
+    return await askForBoolean(
+        'Do you want to continue with the deploy?',
+        false
+    );
+}
+
 export const deployGcloudFrontend = async ({
     baseUrl,
     directoryPath,
@@ -293,10 +307,7 @@ export const deployGcloudFrontend = async ({
     console.log(filesString);
     console.log('--');
 
-    const shouldContinue = await askForBoolean(
-        'Do you want to continue with the deploy?',
-        false
-    );
+    const shouldContinue = await askForContinue();
 
     if (!shouldContinue) {
         return;
