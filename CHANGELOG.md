@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/js20org/deploy/compare/v1.0.3...v1.1.0) (2025-10-15)
+
+
+### Features
+
+* --yes flag ([46fec64](https://github.com/js20org/deploy/commit/46fec64343029845845b551050e05e99a8112add))
+
 ## [1.0.3](https://github.com/js20org/deploy/compare/v1.0.2...v1.0.3) (2025-02-22)
 
 
